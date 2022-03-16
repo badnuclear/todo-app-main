@@ -26,18 +26,46 @@
     </style>
   </head>
   <body>
-    <form id="todo-form">
-      <input type="text" placeholder="Create a new todo..." required />
-    </form>
-    <div id="todo-listbase">
-      <ul id="todo-list"></ul>
-    </div>
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://github.com/badnuclear">badnuclear</a>.
-    </div>
+    <main>
+      <section class="container">
+        <div class="title">
+          <div>
+            <h1>TO DO</h1>
+          </div>
+          <div class="mode"></div>
+        </div>
+        <div class="new">
+          <div class="row">
+            <div class="todo-button"></div>
+            <form id="todo-form">
+              <input type="text" placeholder="Create a new todo..." required />
+            </form>
+          </div>
+        </div>
+        <div class="items-container">
+          <div id="todo-listbase">
+            <ul id="todo-list"></ul>
+          </div>
+          <div class="items-footer row">
+            <div id="footer-items"></div>
+            <div id="footer-all"></div>
+            <div id="footer-active"></div>
+            <div id="footer-completed"></div>
+            <div id="footer-clear-completed"></div>
+          </div>
+        </div>
+        <div class="label">Drag and drop to reorder list</div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/badnuclear">badnuclear</a>.
+      </div>
+    </footer>
   </body>
   <script src="todo.js"></script>
 </html>
